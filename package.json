@@ -1,0 +1,19 @@
+{
+  "name": "npm-package-starter-kit",
+  "version": "0.0.0",
+  "description": "This is my npm package starter kit with batteries included",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spiltbeans/npm-package-starter-kit.git"
+  },
+  "author": "Eyas Valdez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spiltbeans/npm-package-starter-kit/issues"
+  },
+  "homepage": "https://github.com/spiltbeans/npm-package-starter-kit#readme"
+}
