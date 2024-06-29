@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "format:check": "prettier --check src --cache",
-    "format:write": "prettier --write src --cache"
+    "format:write": "prettier --write src --cache",
+	"lint:eslint": "eslint src/**/** --config eslint.config.mjs"
   },
   "repository": {
     "type": "git",
@@ -22,8 +23,16 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@eslint/js": "^9.6.0",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "eslint": "^9.6.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.6.0",
     "husky": "^9.0.11",
-    "prettier": "^3.3.2"
+    "prettier": "^3.3.2",
+    "typescript-eslint": "^7.14.1"
+  },
+  "overrides": {
+    "eslint": "^9.6.0"
   }
 }
