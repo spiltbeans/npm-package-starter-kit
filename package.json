@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format:check": "prettier --check src --cache",
+    "format:write": "prettier --write src --cache"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,8 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
-    "husky": "^9.0.11"
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "husky": "^9.0.11",
+    "prettier": "^3.3.2"
   }
 }
