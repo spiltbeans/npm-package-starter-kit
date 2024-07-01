@@ -1,0 +1,20 @@
+{
+	"name": "esm-demo",
+	"version": "0.0.0",
+	"description": "A ESModule demo for this awesome npm package",
+	"main": "index.mjs",
+	"scripts": {
+		"clean": "rm -rf ./esm-demo_pkg.tgz node_modules package-lock.json",
+		"pack:build": "cd ../../ && npm pack && mv *.tgz ./demos/esm/esm-demo_pkg.tgz",
+		"pack:install": "npm i esm-demo_pkg.tgz",
+		"pack:package": "npm run pack:build && npm run pack:install",
+		"prestart": "npm run clean && npm run pack:package",
+		"start": "node index.mjs",
+		"start:noinstall": "node index.mjs"
+	},
+	"author": "Eyas Valdez",
+	"license": "ISC",
+	"dependencies": {
+		"npm-package-starter-kit": "file:esm-demo_pkg.tgz"
+	}
+}
