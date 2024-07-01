@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"target": "es2022",
+		"lib": [
+			"esnext"
+		],
+		"module": "CommonJS",
+		"esModuleInterop": true,
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"skipLibCheck": true
+	},
+	"file": "./index.ts",
+}
