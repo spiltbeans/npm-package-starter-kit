@@ -1,3 +1,4 @@
 {
-    "*.ts": ["npm run format:write", "npm run lint:eslint", "npm run lint:ts"]
+    "*.ts": ["npm run format:write", "npm run lint:eslint", "npm run lint:ts"],
+	"*.js": ["npm run format:write", "npm run lint:eslint"]
 }
