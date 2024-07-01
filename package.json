@@ -24,6 +24,7 @@
     "start": "nodemon",
     "test": "node --experimental-vm-modules --no-warnings node_modules/jest/bin/jest.js",
     "test:coverage": "node --experimental-vm-modules --no-warnings node_modules/jest/bin/jest.js --coverage --coverageDirectory=./test/coverage",
+    "test:ci": "node --experimental-vm-modules --no-warnings node_modules/jest/bin/jest.js --ci",
     "prepare": "husky install",
     "format:check": "prettier --check src --cache",
     "format:write": "prettier --write src --cache",
