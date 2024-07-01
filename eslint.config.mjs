@@ -5,7 +5,7 @@ import eslintConfigPrettier from "eslint-config-prettier";
 
 
 export default [
-  {ignores: ["dist/**"]},
+  {ignores: ["dist/**","demos/**"]},
   {files: ["**/*.{js,mjs,cjs,ts}"]},
   {languageOptions: { globals: globals.browser }},
   pluginJs.configs.recommended,

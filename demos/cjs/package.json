@@ -1,0 +1,20 @@
+{
+  "name": "cjs-demo",
+  "version": "0.0.0",
+  "description": "A CommonJS demo for this awesome npm package",
+  "main": "index.cjs",
+  "scripts": {
+    "clean": "rm -rf ./cjs-demo_pkg.tgz node_modules package-lock.json",
+    "pack:build": "cd ../../ && npm pack && mv *.tgz ./demos/cjs/cjs-demo_pkg.tgz",
+    "pack:install": "npm i cjs-demo_pkg.tgz",
+    "pack:package": "npm run pack:build && npm run pack:install",
+    "prestart": "npm run clean && npm run pack:package",
+    "start": "node index.cjs",
+    "start:noinstall": "node index.cjs"
+  },
+  "author": "Eyas Valdez",
+  "license": "ISC",
+  "dependencies": {
+    "npm-package-starter-kit": "file:cjs-demo_pkg.tgz"
+  }
+}
