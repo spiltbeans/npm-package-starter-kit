@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "This is my npm package starter kit with batteries included",
   "type": "module",
+  "sideEffects": false,
   "exports": {
     ".": {	
       "import": {
