@@ -46,10 +46,28 @@ export default [
         ],
     },
     // this config will bundle the type declaration files
-    // emitted during the `build:declarations` step
+    // emitted during the `build:declarations` step for the `types` fallback
     {
         input: "./dist/declarations/index.d.ts",
         output: [{ file: package_details.types, format: "es" }],
+        plugins: [dts()],
+    },
+    // this config will bundle the type declaration files
+    // emitted during the `build:declarations` step for the ES Module types
+    {
+        input: "./dist/declarations/index.d.ts",
+        output: [
+            { file: package_details.exports["."].import.types, format: "es" },
+        ],
+        plugins: [dts()],
+    },
+    // this config will bundle the type declaration files
+    // emitted during the `build:declarations` step for the CommonJS types
+    {
+        input: "./dist/declarations/index.d.ts",
+        output: [
+            { file: package_details.exports["."].require.types, format: "es" },
+        ],
         plugins: [dts()],
     },
 ]
