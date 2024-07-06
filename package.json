@@ -1,11 +1,11 @@
 {
   "name": "npm-package-starter-kit",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "This is my npm package starter kit with batteries included",
   "type": "module",
   "sideEffects": false,
   "exports": {
-    ".": {	
+    ".": {
       "import": {
         "types": "./dist/@types/esm/index.d.ts",
         "default": "./dist/esm/index.mjs"
