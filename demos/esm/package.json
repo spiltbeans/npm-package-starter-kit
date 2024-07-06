@@ -15,6 +15,6 @@
 	"author": "Eyas Valdez",
 	"license": "ISC",
 	"dependencies": {
-		"npm-package-starter-kit": "file:esm-demo_pkg.tgz"
+		"@spiltbeans/npm-package-starter-kit": "file:esm-demo_pkg.tgz"
 	}
 }

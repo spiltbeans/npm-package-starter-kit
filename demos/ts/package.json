@@ -21,6 +21,6 @@
 		"typescript": "^5.5.2"
 	},
 	"dependencies": {
-		"npm-package-starter-kit": "file:ts-demo_pkg.tgz"
+		"@spiltbeans/npm-package-starter-kit": "file:ts-demo_pkg.tgz"
 	}
 }
