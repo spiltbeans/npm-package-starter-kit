@@ -1,6 +1,6 @@
 {
   "name": "@spiltbeans/npm-package-starter-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is my npm package starter kit with batteries included",
   "type": "module",
   "sideEffects": false,
